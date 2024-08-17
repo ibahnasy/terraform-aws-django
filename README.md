@@ -74,8 +74,10 @@ This will provision all the necessary AWS resources and deploy the Django applic
 Access the application: The DNS name of the ELB will be outputted after a successful deployment. Use it to access the application.
 
 
-Notes
+# Notes
 
 Ensure that the AWS CLI is configured with the necessary permissions before running Terraform commands.
+
 You will need to adapt the Django settings to match the AWS environment, such as configuring the database connection and "ALLOWED_HOSTS".
+
 Also should set the database endpoint URL to that provided one from Terraform after the RDS is created in the docker compose file.
